@@ -75,8 +75,7 @@ const ManageTask = () => {
         </div>
         <div className={classes.manager__field}>
           <label>Assignee:</label>
-          {/* <input onChange={(event) => setAssignee(event.target.value)} value={assignee} /> */}
-          <select className={classes.manager__field}>
+          <select onChange={(event) => setAssignee(event.target.value)} value={assignee} className={classes.manager__field}>
             <option>Choose an employee</option>
             {employees.length !== 0 && employees.map(employee => <option>{employee.full_name}</option>)}
           </select>
@@ -85,9 +84,6 @@ const ManageTask = () => {
           <label>Due date:</label>
           <input type="date" onChange={(event) => setDueDate(event.target.value)} value={dueDate} />
         </div>
-        
-       
-        
         <button className={classes.button} type='submit' onClick={submitHandler}>{!id ? "Create" : "Edit"} task</button>
       </form>
     </div>

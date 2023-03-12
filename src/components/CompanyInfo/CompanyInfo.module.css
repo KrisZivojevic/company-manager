@@ -7,3 +7,8 @@
 .info h2 {
   color: #7aa39a;
 }
+.info > div {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+}

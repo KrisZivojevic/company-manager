@@ -15,6 +15,11 @@ All React components were stored in the components folder. All HTTP communicatio
 
 Styling was done using the CSS modules.
 
+### Additional Functionalities
+
+- Company info view includes the number of tasks and employees.
+- Company view also displays the top 5 employees with largest number of tasks.
+
 ## Setup and Installation
 
 To install dependencies in the project run `npm install`.

@@ -1,4 +1,4 @@
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import CompanyInfo from "./components/CompanyInfo/CompanyInfo";
 import EmployeeDetails from "./components/EmployeeDetails/EmployeeDetails";
 import Employees from "./components/Employees/Employees";
@@ -11,11 +11,8 @@ import Tasks from "./components/Tasks/Tasks";
 function App() {
   return (
     <div>
-      {/* NAVIGATION COMPONENT */}
       <Navigation />
-
       <Routes>
-        {/* EMPLOYEE FLOW */}
         <Route path="/add-employee" element={
           <div className="wrapper">
             <ManageEmployee />
@@ -28,7 +25,6 @@ function App() {
         } />
         <Route path="/employee/:id" element={<EmployeeDetails />} />
         <Route path="/employees" element={<Employees />} />
-        {/* TASK FLOW */}
         <Route path="/add-task" element={
           <div className="wrapper">
             <ManageTask />
@@ -41,7 +37,6 @@ function App() {
         } />
         <Route path="/task/:id" element={<TaskDetails />} />
         <Route path="/tasks" element={<Tasks />} />
-        {/* COMPANY INFO COMPONENT */}
         <Route path="/" element={<CompanyInfo />} />
       </Routes>
     </div>
