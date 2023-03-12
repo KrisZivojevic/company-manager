@@ -1,0 +1,17 @@
+.card {
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  flex-basis: 40%;
+  justify-content: space-between;
+  background-color: #d4e8dc;
+}
+.card__controls {
+  width: 70px;
+  margin-left: auto;
+}
+.card__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

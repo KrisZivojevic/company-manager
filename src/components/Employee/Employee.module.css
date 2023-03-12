@@ -1,0 +1,17 @@
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  max-width: 500px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #d4e8dc;
+}
+.card > * {
+  flex-basis: 33%;
+  text-align: center;
+}
+.card__button {
+  border: none;
+  background-color: transparent;
+}

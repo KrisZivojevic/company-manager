@@ -1,0 +1,51 @@
+.manager {
+  width: 400px;
+  text-align: center;
+  margin: 150px auto;
+  color: #7aa39a;
+}
+.manager h2 {
+  margin-bottom: 20px;
+}
+.manager > form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.manager__field {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.manager__field > label {
+  width: 150px;
+  text-align: left;
+  line-height: 25px;
+}
+.manager__field > input {
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dfdbd8;
+  padding: 5px;
+
+}
+.button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #7aa39a;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  margin-top: 20px;
+  color: #dad5d2;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+.button:hover {
+  color: #fff;
+}

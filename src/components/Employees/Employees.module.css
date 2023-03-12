@@ -1,0 +1,44 @@
+.board {
+  width: 500px;
+  margin: 150px auto;
+}
+.container {
+  height: 500px;
+  padding: 20px;
+  overflow: auto;
+}
+.header {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  max-width: 500px;
+  color: #7aa39a;
+}
+.header > span {
+  flex-basis: 33%;
+  text-align: center;
+}
+.button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #7aa39a;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button__link {
+  color: #dad5d2;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 18px;
+}
+.button__link:hover {
+  color: #ffffff;
+}
